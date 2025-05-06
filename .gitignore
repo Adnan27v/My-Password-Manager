@@ -34,7 +34,7 @@ ENV/
 *.swo
 
 # Project specific
-data.txt
+data.json
 
 # OS specific
 .DS_Store

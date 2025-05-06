@@ -6,9 +6,12 @@ A simple and secure password manager application built with Python and Tkinter. 
 
 - Generate strong, random passwords
 - Store website credentials (website, email/username, password)
+- Search functionality to quickly find saved credentials
 - Copy generated passwords to clipboard automatically
 - Simple and intuitive user interface
-- Data stored locally in a text file
+- Data stored locally in JSON format for better organization
+- Automatic website name capitalization
+- Improved error handling and user feedback
 
 ## Requirements
 
@@ -40,13 +43,21 @@ python main.py
 3. Either enter your password manually or click "Generate Password" to create a strong random password
 4. Click "Add" to save the credentials
 5. The password will be automatically copied to your clipboard
+6. Use the "Search" button to quickly find saved credentials for any website
+
+## Data Storage
+
+- All credentials are stored in a local `data.json` file
+- Data is organized in a structured JSON format for better readability and maintenance
+- Website names are automatically capitalized for consistency
+- Each website entry contains email and password information
 
 ## Security Note
 
 This is a simple password manager for demonstration purposes. For production use, consider:
 - Using encryption for stored passwords
 - Implementing a master password
-- Using a secure database instead of a text file
+- Using a secure database instead of a JSON file
 - Adding additional security features
 
 ## License
